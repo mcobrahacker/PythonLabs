@@ -1,19 +1,25 @@
-# Описати функцію Calc (A, B, Op) дійсного типу, що виконує над ненульовими дійсними числами A та B одну з арифметичних операцій і повертає її результат.
-# Вид операції визначається цілим параметром Op: 1 - віднімання, 2 - множення, 3 - ділення, інші значення - додавання.
-# За допомогою Calc виконати для даних A і B операції, які визначаються даними цілими N1, N2, N3.
+# Описати функцію IsPower5 (K) логічного типу, яка повертає True, якщо цілий
+# параметр K (> 0) є ступенем числа 5, і False в іншому випадку. З її допомогою
+# знайти кількість степенів числа 5 в наборі з 10 цілих позитивних чисел.
 
-def Calc(A, B, Op):
-    if Op == 1:
-        return A - B
-    elif Op == 2:
-        return A * B
-    elif Op == 3:
-        return A / B
+def IsPower5(K):
+
+    if K < 5:
+        return False
     else:
-        return A + B
+        res = 1
+        i = 0 
+        while res < K:
+            i = i + 1
+            res = res * 5
+        if res == K:
+            return True
+        else:
+            return False
 
-N1 = int(input("Enter a first number: "))
-N2 = int(input("Enter a second number: "))
-N3 = int(input("Enter a Op: "))
 
-print(Calc(N1, N2, N3))
+var = 10
+while var != 0:
+    k = float(input("Enter a number: "))
+    print("Result - ", IsPower5(k))
+    var = var - 1
