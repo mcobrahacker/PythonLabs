@@ -5,4 +5,16 @@
 # C (N, K) = C (N - 1, K) + C (N - 1, K - 1) при 0 <K <N.
 
 def Combin1(N, K):
+    if K == 0:
+        return 1
+    elif N == K:
+        return 1
+    else:
+        return Combin1(N-1,K) + Combin1(N-1,K-1)
     
+N = int(input("Enter N - "))
+
+var = 5
+while var != 0:
+    K = int(input("Enter K - "))
+    print(Combin1(N,K))
