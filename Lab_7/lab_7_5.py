@@ -18,3 +18,4 @@ var = 5
 while var != 0:
     K = int(input("Enter K - "))
     print(Combin1(N,K))
+    var = var - 1
