@@ -3,7 +3,7 @@
 
 string_one = input("Enter a string ")
 
-onePos = string_one.rfind('/')
+onePos = string_one.rfind('\')
 print(onePos)
 twoPos = string_one.find('.',onePos)
 print(twoPos)
