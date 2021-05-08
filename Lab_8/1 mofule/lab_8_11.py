@@ -1,18 +1,25 @@
 # С множества чисел [1..n] выделить подмножество сложных чисел вида 6k + 1, и
 # подмножество простых чисел вида 6k + 1.
 
-n = int(input("Enter N: "))
-s = set(range(n))
+N = int(input("Enter N: "))
+print("\n")
 
+prime = set()
+hard = set()
+m = set()
 
-def function(n):
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
+for i in range(2, N):
+    m.add(i)
 
-    return True
+for i in range(N):
+    prime.add(6 * i + 1)
 
-s = filter(function, s)
-s = filter(lambda x: (x - 1) % 6 == 0, s)
+for i in m:
+    if i in prime:
+        hard.add(i)
 
-print("Result prime numbers: ", sorted(s))
+print("Numbers - ", sorted(m))
+print("\n")
+print("Prime result - ",sorted(prime))
+print("\n")
+print("Hard result - ", sorted(hard))
