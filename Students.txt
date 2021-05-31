@@ -1,0 +1,10 @@
+    Mark        Students
+    88.9        Lamar Didinon
+    86.7        Michael Frankfurt
+    63.2	Trevor Fonk
+    18.4     	Pablo Fender
+    85.1      	Meelina Frankun
+    51.5        Franklin Bobok
+    94.3     	Gnezdo Picasso
+    20.0     	David Chupa
+    92.8	Robert Doman

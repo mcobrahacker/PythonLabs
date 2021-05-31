@@ -8,6 +8,6 @@ for i in range(2, a):
 
     for j in range(1, i):
         if i % j == 0:
-            s = S + j
+            s = s + j
     if s == i:
         print(i)
