@@ -1,4 +1,5 @@
-amogus
-la
-la
-pidor
+hello world
+it's
+my 
+programm
+Thanks!
