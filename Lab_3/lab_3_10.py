@@ -5,7 +5,7 @@
 
 import random
 
-N = input("Enter a number ")
+N = float(input("Enter a number "))
 
 print("N = ", N)
 

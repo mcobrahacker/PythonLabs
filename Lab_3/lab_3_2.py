@@ -3,11 +3,8 @@
 
 a = int(input("Enter a number >>> "))
 
-for i in range(2, a):
-    s = 0
+def Perfect(n):
+        s = [j for j in range(1, n // 2 + 1) if not n % j]
+        return sum(s) == n
 
-    for j in range(1, i):
-        if i % j == 0:
-            s = s + j
-    if s == i:
-        print(i)
+print(Perfect(a))

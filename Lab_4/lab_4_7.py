@@ -6,4 +6,8 @@
 
 str = input("Enter string ")
 
-print(str[(len(str) + 1) // 2:] + str[:len(str) + 1 // 2])
+if len(str) % 2 != 0: 
+    print(str[(len(str)) // 2:] + str[:len(str) // 2])
+else:
+    print(str[(len(str)) +1 // 2:] + str[:len(str) // 2])
+
